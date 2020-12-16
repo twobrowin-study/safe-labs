@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>653</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>653</width>
+    <height>353</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>653</width>
+    <height>353</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Сформировать пароль</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>611</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayoutCheckBox">
+       <item>
+        <widget class="QCheckBox" name="checkBoxLatUp">
+         <property name="text">
+          <string>Латиница большие</string>
+         </property>
+         <property name="Alphabet" stdset="0">
+          <string>ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxLatLow">
+         <property name="text">
+          <string>Латиница малые</string>
+         </property>
+         <property name="Alphabet" stdset="0">
+          <string>abcdefghijklmnopqrstuvwxyz</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxCyrUp">
+         <property name="text">
+          <string>Кирилица большие</string>
+         </property>
+         <property name="Alphabet" stdset="0">
+          <string>АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxCyrLow">
+         <property name="text">
+          <string>Кириллица малые</string>
+         </property>
+         <property name="Alphabet" stdset="0">
+          <string>абвгдеёжзийклмнопрстуфхцчшщъыьэюя</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxSym">
+         <property name="text">
+          <string>Знаки препинания</string>
+         </property>
+         <property name="Alphabet" stdset="0">
+          <string>,./?;:-!@#$%^&amp;*()~</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxNum">
+         <property name="text">
+          <string>Цифры</string>
+         </property>
+         <property name="Alphabet" stdset="0">
+          <string>1234567890</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <layout class="QFormLayout" name="formLayoutInput">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelPstatic">
+         <property name="text">
+          <string>P (вероятность)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelVstatic">
+         <property name="text">
+          <string>V (скорость), паролей/день</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelTstatic">
+         <property name="text">
+          <string>T (срок действия), дней</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditP"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditV"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditT"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelSstarStatic">
+         <property name="text">
+          <string>S* (нижняя граница паролей)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelAstatic">
+         <property name="text">
+          <string>A (мощность алфавита)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelLstatic">
+         <property name="text">
+          <string>L (длина пароля)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="labelSstar">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="labelA">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="labelL">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QVBoxLayout" name="verticalLayoutOutput">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayoutPassword">
+         <item>
+          <widget class="QLabel" name="labelPasswordStatic">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Пароль: </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelPassword">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Сформировать пароль</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>653</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
